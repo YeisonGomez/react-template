@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Button } from 'antd';
 
 export const Signup = () => {
 
@@ -7,7 +8,7 @@ export const Signup = () => {
 
   return (
     <div>
-      <h1>Signup</h1>
+      <Button type="primary">Signup</Button>
     </div>
   )
 }

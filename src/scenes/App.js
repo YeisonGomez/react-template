@@ -4,7 +4,6 @@ import moment from 'moment'
 
 import { Private } from '../scenes/Layout/Private/Private'
 import { Public } from '../scenes/Layout/Public/Public'
-import '../App.css';
 
 export const App = () => {
   

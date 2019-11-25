@@ -13,7 +13,7 @@ export const Login = () => {
   }
 
   return (
-    <div>
+    <div className="component-login">
       <h1>Login</h1>
       <button onClick={handleLogin}>Iniciar sesión</button>
     </div>

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { createBrowserHistory } from 'history'
 import { Provider } from 'react-redux';
 
-import './index.css';
+import './sass/main.scss';  
 import initStore from './store/Store';
 import { App } from './scenes/App';
 import * as serviceWorker from './serviceWorker';

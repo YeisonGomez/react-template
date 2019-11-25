@@ -1,0 +1,8 @@
+@mixin fontFace($name, $file, $weight: normal) {
+  $path: "../assets/fonts/" + $file;
+  @font-face {
+    font-family: $name;
+    src: url($path+".woff") format(woff), url($path+".ttf") format(truetype), url($path+".otf") format(opentype);
+    font-weight: $weight;
+  }
+}
