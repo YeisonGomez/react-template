@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux'
 import moment from 'moment'
 
+import '../i18n/i18n'
 import { Private } from '../scenes/Layout/Private/Private'
 import { Public } from '../scenes/Layout/Public/Public'
 
