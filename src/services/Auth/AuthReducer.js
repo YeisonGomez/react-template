@@ -7,7 +7,6 @@ export const INITIAL_STATE = {
 
 const reducer = handleActions({
   AUTH: {
-
     LOGIN: (state, { payload: {} }) => ({ ...state, loading: true }),
     LOGIN_RESPONSE: {
       next(state, { payload: { token } }) {

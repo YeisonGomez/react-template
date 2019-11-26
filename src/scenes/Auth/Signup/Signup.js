@@ -8,7 +8,7 @@ export const Signup = () => {
   const { t } = useTranslation();
 
   return (
-    <div>  
+    <div >  
       <Row>
         <Col>
           <h1>{t('sing')}</h1>

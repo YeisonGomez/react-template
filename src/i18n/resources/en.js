@@ -4,7 +4,7 @@ export const en = {
   "login": "Login",
   "name_first": "first name",
   "name_last": "last name",
-  "mail": "E-mail",
+  "mail": "Email",
   "phone": "Phone",
   "sex": "Sex",
   "status_marital": "Status Marital",
@@ -26,4 +26,7 @@ export const en = {
   "not_age": "You are not of age!",
   "single": "Single",
   "married": "Married",
+  "reset_password": "Reset password",
+  "continue": "Continue",
+  "remember": "Remember"
 }

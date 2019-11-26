@@ -4,7 +4,7 @@ export const es = {
   "login": "Inicio de sesión",
   "name_first": "Nombres",
   "name_last": "Apellidos",
-  "mail": "Correo",
+  "mail": "Correo electronico",
   "phone": "Telefono",
   "sex": "Sexo",
   "status_marital": "Estado civil",
@@ -26,4 +26,7 @@ export const es = {
   "not_age": "No eres mayor de edad!",
   "single": "Soltero",
   "married": "Casado",
+  "reset_password": "Restaurar contraseña",
+  "continue": "Continuar",
+  "remember": "Recordarme"
 }

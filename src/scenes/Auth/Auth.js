@@ -39,7 +39,7 @@ export const Auth = () => {
 
       <Layout style={{ paddingTop: '24px' }}>
         <Content>
-          <Row gutter={16}>
+          <Row gutter={20}>
             <Col span={12}>
               <Signup />
             </Col>
