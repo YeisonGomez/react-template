@@ -11,7 +11,7 @@ export const App = () => {
   const { authentication } = useSelector(state => state.auth)
 
   useEffect(() => {
-    moment.locale('es');
+    moment.locale('en');
   }, []);
 
   return (
