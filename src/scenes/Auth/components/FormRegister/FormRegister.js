@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
 	Form,
 	Input,
@@ -10,13 +11,13 @@ import {
 	DatePicker
 } from 'antd';
 import * as moment from 'moment';
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 
 const Register = ({ form }) => {
 
 	const { t } = useTranslation();
-	const { getFieldDecorator, validateFields, getFieldValue, validateFieldsAndScroll } = form
+	const { getFieldDecorator, validateFields, getFieldValue, validateFieldsAndScroll } = form;
 	const { Option } = Select;
 	const currentDate = moment();
 
@@ -57,8 +58,8 @@ const Register = ({ form }) => {
 	const validateTime = (rule, value, callback) => {
 		if (value) {
 			const value_format = value.format('DD/MM/YYYY');
-			const date_user = moment(value_format, "DD/MM/YYYY");
-			if (currentDate.diff(date_user, "years") <= 18) {
+			const date_user = moment(value_format, 'DD/MM/YYYY');
+			if (currentDate.diff(date_user, 'years') <= 18) {
 				callback(t('not_age'));
 			} else {
 				callback();
@@ -79,15 +80,15 @@ const Register = ({ form }) => {
 		});
 	};
 
-	const handleConfirmBlur = e => {
-		const { value } = e.target;
+	const handleConfirmBlur = () => {
+		//const { value } = e.target;
 		//console.log('handle confir blur', value);
 		//this.setState({ confirmDirty: this.state.confirmDirty || !!value });
 	};
 
-	const handleChange = (value) => {
+	const handleChange = () => {
 		// console.log(`selected ${value}`);
-	}
+	};
 
 	return (
 		<Form onSubmit={handleSubmit}>
@@ -332,6 +333,10 @@ const Register = ({ form }) => {
 
 		</Form>
 	);
-}
+};
+
+Register.propTypes = {
+	form: PropTypes.any
+};
 
 export const FormRegister = Form.create({ name: 'FormRegister' })(Register);
